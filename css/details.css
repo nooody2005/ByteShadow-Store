@@ -1,0 +1,243 @@
+
+:root {
+    --transparent2-color: rgba(0, 0, 0, .7);
+}
+
+/* ===========================
+        Painting Details
+=========================== */
+
+.painting {
+    position: relative;
+    background: var(--transparent2-color);
+    padding: 150px 0 80px;
+    min-height: 100vh;
+}
+
+.painting .painting-content {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* ===========================
+            Image
+=========================== */
+
+.painting .image {
+    flex: 0 0 420px;
+}
+
+.painting .image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, .45);
+    transition: .4s;
+}
+
+.painting .image img:hover {
+    transform: scale(1.13);
+}
+
+/* ===========================
+          Details
+=========================== */
+
+.painting .datails {
+    flex: 1;
+}
+
+.painting .painting-Name {
+    color: var(--main-color);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.painting .breif-overview {
+    color: rgba(255, 255, 255, .85);
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 45px;
+    max-width: 700px;
+}
+
+/* ===========================
+        Sale Section
+=========================== */
+
+.sale-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+/* ===========================
+        Price Card
+=========================== */
+
+.price {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    padding: 30px;
+    min-width: 330px;
+    backdrop-filter: blur(10px);
+}
+
+.price h3 {
+    color: rgba(255, 255, 255, .8);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.current-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.current-price .number {
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.current-price .currency {
+    color: var(--strong-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===========================
+        Bid Input
+=========================== */
+
+.bid-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.bid-box label {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.bid-input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .08);
+    color: white;
+    font-size: 18px;
+    outline: none;
+    transition: .3s;
+}
+
+.bid-input:focus {
+    border-color: var(--strong-color);
+    box-shadow: 0 0 15px rgba(255, 255, 255, .15);
+}
+
+/* إزالة أسهم فايرفوكس */
+.bid-input {
+    -moz-appearance: textfield;
+}
+
+/* ===========================
+        Bid Button
+=========================== */
+
+.bid-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--strong-color);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.bid-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+}
+
+/* ===========================
+      Size & Information
+=========================== */
+/* ===========================
+      Size & Information
+=========================== */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 250px;
+}
+
+.info>div {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    padding: 22px 25px;
+    backdrop-filter: blur(10px);
+    transition: .35s ease;
+}
+
+.info>div:hover {
+    transform: translateY(-5px);
+    border-color: var(--strong-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+}
+
+.info .title {
+    display: block;
+    color: rgba(255, 255, 255, .65);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.info .value {
+    display: block;
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* لون مختلف لموعد انتهاء المزاد */
+
+.info .auction-info .value {
+    color: var(--main-color);
+}
+
+/* Responsive */
+
+@media (max-width:991px) {
+
+    .sale-section {
+        flex-direction: column;
+    }
+
+    .price,
+    .info {
+        width: 100%;
+    }
+
+    .info>div {
+        width: 100%;
+    }
+
+}
