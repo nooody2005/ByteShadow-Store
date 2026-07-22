@@ -392,7 +392,7 @@ ul{
 
 /* Start Gallery  */
 .gallery {
-    padding-bottom: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
     padding-top: var(--section-padding);
     position: relative;
     background-color: var(--transparent-color);
@@ -519,6 +519,26 @@ ul{
     right: 15px;
     color: var(--main-color);
     animation: moving-arrow 0.6s linear infinite;
+}
+.gallery .container .more{
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    text-decoration: none;
+    font-size: 22px;
+    /* font-weight: bold; */
+    color: var(--strong-color);
+    background-color: var(--transparent-color);
+    padding: 12px 20px;
+    
+}
+.gallery .container .more:hover{
+
+    background-color: var(--strong-color);
+    color: var(--main-color);
+    box-shadow: 0 12px 20px rgba(87, 56, 70, .35);
+
 }
 /* End Gallery */
 
