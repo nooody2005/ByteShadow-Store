@@ -2,7 +2,7 @@
 :root{
     --main-color:#fae4e4;
     --transparent-color: rgba(168, 168, 168, 0.7);
-    --back-color:#a49ea1;
+    --back-color:#999496;
     --strong-color:#5a4950;
     --section-padding:100px;
     --main-duration: .4s;
@@ -688,6 +688,7 @@ ul{
 .contact {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    background-color: var(--transparent-color);
 }
 
 .contact .container {}
@@ -713,6 +714,7 @@ ul{
     border: 1px solid var(--back-color);
     margin-bottom: 30px;
     width: 100%;
+    background-color: var(--transparent-color);
 }
 
 .contact .content form .main-input:focus {
