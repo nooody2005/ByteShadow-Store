@@ -4,7 +4,7 @@
     --transparent-color: rgba(168, 168, 168, 0.7);
     --back-color:#aaa7a8;
     --strong-color:#5a4950;
-    --strong-color-light: rgba(224, 135, 181, 0.688);
+    --strong-color-light: rgba(234, 181, 207, 0.688);
     --section-padding:100px;
     --main-duration: .4s;
 }
@@ -628,7 +628,7 @@ ul{
     transform: rotate(7deg);
 }
 
-/* الصورة الخامسة */
+
 .decore-content .images img:nth-child(5) {
     top: 125px;
     right: 105px;
