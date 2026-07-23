@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteShadow Store</title>
+    <!-- Main Template css file -->
+    <link rel="stylesheet" href="css/overview.css"/>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/add.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header  -->
+
+   <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="images/" alt="">
+                <h3>BYTE SHADOW</h3>
+            </div>
+           <div class="links">
+                <div class="auth">
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="menu">
+                    <span class="icons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <ul>
+                        <li><a href="#home">Home</a> </li>
+                        <li><a href="#gallery">Gallery</a> </li>
+                        <li><a href="#contact us">Contact us</a> </li>
+                    </ul>
+                </div>
+               </div>
+           </div>
+        </div>
+     <!-- End Header  -->
+     
+        <!-- Start Edit Dashboard -->
+       <section class="dashboard">
+    <div class="container">
+        <div class="dashboard-box">
+            <h2>Edit Painting</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label>Painting Name</label>
+                    <input type="text" value="Silent Shadows">
+                </div>
+
+                <div class="form-group">
+                    <label>Brief Overview</label>
+                    <textarea rows="3">A dark emotional painting expressing loneliness and hidden feelings.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea rows="7">This artwork represents the silent battles inside the human soul...</textarea>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select>
+                            <option>Expressive</option>
+                            <option>Nature</option>
+                            <option>Romantic</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Size</label>
+                        <input type="text" value="50 x 70 cm">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Starting Price</label>
+                        <input type="number" value="500">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Auction Ends</label>
+                        <input type="datetime-local">
+                    </div>
+
+                </div>
+
+                <div class="image-preview">
+
+                    <h3>Main Image</h3>
+
+                    <img src="images/1.jpg" alt="">
+
+                    <input type="file">
+
+                </div>
+
+                <div class="image-preview">
+
+                    <h3>Decoration Images</h3>
+
+                    <div class="preview-grid">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+
+                    <input type="file" multiple>
+
+                </div>
+
+                <div class="image-preview">
+
+                    <h3>Stage Images</h3>
+
+                    <div class="preview-grid">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+
+                    <input type="file" multiple>
+
+                </div>
+
+                <div class="dashboard-buttons">
+
+                    <button class="dashboard-btn" type="submit">
+                        Save Changes
+                    </button>
+
+                    <button class="delete-btn" type="button">
+                        Delete Painting
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+         <!-- End Edit Dashboard -->
+
+        <!-- Start Footer  -->
+        <div class="footer">
+            <div class="container">
+                <img src="images/logo.png" alt="Logo">
+                <p>We Are Social</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-home"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <p class="copyright">&copy; 2026 <span> All Right Reserved </span></p>
+            </div>
+        </div>
+    <!-- End Footer  -->
+
+
+    </body>
+</html>
