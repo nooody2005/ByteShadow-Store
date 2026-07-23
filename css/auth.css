@@ -1,6 +1,6 @@
 .auth-page {
     background: var(--dark-bg);
-    padding: 170px 0 120px;
+    padding: 170px 0 200px;
     min-height: 100vh;
     position: relative;
     box-shadow:
@@ -37,20 +37,6 @@
     position: relative;
     overflow: hidden;
 }
-
-/* .auth-box::before {
-    content: "BYTE SHADOW";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 10px;
-    color: rgba(255, 255, 255, .03);
-    white-space: nowrap;
-    pointer-events: none;
-} */
 
 .auth-box>* {
     position: relative;
@@ -146,7 +132,7 @@
 
 .auth-btn:hover {
     transform: translateY(-4px);
-    background: rgba(255, 255, 255, .12);
+    background: var(--soft-border);
     box-shadow: 0 15px 35px var(--shadow-dark);
 }
 
