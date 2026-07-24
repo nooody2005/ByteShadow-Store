@@ -47,6 +47,7 @@
     transition: .3s;
 }
 
+
 .form-group textarea {
     resize: vertical;
 }
@@ -61,10 +62,14 @@
 .form-row {
     display: flex;
     gap: 25px;
+     
 }
 
 .form-row .form-group {
     flex: 1;
+}
+.form-row .form-group select option{
+    background-color: var(--shadow-dark);
 }
 
 .dashboard-btn {

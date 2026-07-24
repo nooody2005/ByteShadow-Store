@@ -472,7 +472,8 @@
     gap: 30px;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 35px 20px 25px;
+    margin: 0 140px;
+    padding: 35px 80px 25px;
     scroll-behavior: smooth;
 }
 
@@ -487,7 +488,7 @@
 
 .stage-images img {
     flex: 0 0 auto;
-    width: 260px;
+    width: 240px;
     height: 330px;
     object-fit: cover;
     border-radius: 18px;
@@ -496,13 +497,13 @@
     transition: .45s;
 }
 
-.stage-images img:nth-child(odd) {
+/* .stage-images img:nth-child(odd) {
     transform: rotate(-5deg);
 }
 
 .stage-images img:nth-child(even) {
     transform: rotate(5deg);
-}
+} */
 
 .stage-images img:hover {
     transform: rotate(0deg) scale(1.12);
