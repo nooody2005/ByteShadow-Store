@@ -156,6 +156,16 @@ ul{
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    align-items: center;
+}
+
+.header .container .logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    transition: .35s ease;
 }
 
 .header .container .logo h3 {
@@ -872,6 +882,22 @@ ul{
 .footer .container {
     position: relative;
 } */
+/* Footer Logo */
+.footer .container>img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 2px solid var(--main-color);
+    transition: .35s ease;
+}
+
+.footer .container>img:hover {
+    transform: scale(1.08) rotate(-3deg);
+    box-shadow: 0 8px 20px var(--strong-color);
+}
 
 .footer p:not(.copyright) {
     text-transform: uppercase;
