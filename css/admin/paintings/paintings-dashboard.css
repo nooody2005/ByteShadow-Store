@@ -351,7 +351,7 @@
 }
 
 .show-btn {
-    background: var(--glass-bg);
+    background: transparent;
     border: 1px solid var(--soft-border);
     color: var(--main-color);
 }
@@ -368,8 +368,8 @@
 }
 
 .edit-btn:hover {
-    background: rgba(255, 255, 255, .08);
     transform: translateY(-3px);
+    box-shadow: 0 12px 22px var(--shadow-dark);
 }
 
 .delete-btn {
@@ -379,8 +379,8 @@
 }
 
 .delete-btn:hover {
-    background: var(--strong-color);
-    color: var(--main-color);
+    background: var(--main-color);
+    color: var(--strong-color);
     transform: translateY(-3px);
     box-shadow: 0 12px 22px var(--shadow-dark);
 }
