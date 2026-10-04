@@ -2,7 +2,7 @@
         Users Dashboard
 =========================== */
 
-
+/* 
 .users-dashboard {
 
     background: var(--dark-bg);
@@ -15,13 +15,21 @@
         inset 0 -30px 60px var(--shadow-soft),
         0 40px 70px rgba(0, 0, 0, .25);
 
-}
+} */
 
+.users-dashboard {
+    background: var(--dark-bg);
+    min-height: 100vh;
+    padding: 170px 0 120px;
+    box-shadow:
+        inset 0 -30px 60px var(--shadow-soft),
+        0 40px 70px rgba(0, 0, 0, .25);
+}
 
 
 /* Header */
 
-
+/* 
 .users-header {
 
     margin-bottom: 50px;
@@ -35,9 +43,38 @@
 
     font-size: 42px;
 
+} */
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
+.users-header h2 {
+    color: var(--main-color);
+    font-size: 40px;
+}
 
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--glass-bg);
+    border: 1px solid var(--soft-border);
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .35s;
+    font-size: 22px;
+}
+
+.add-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px var(--shadow-dark);
+}
 
 /* Statistics */
 
@@ -46,7 +83,7 @@
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 25px;
 
@@ -111,7 +148,7 @@
 /* Search */
 
 
-.user-search {
+/* .user-search {
 
     margin-bottom: 40px;
 
@@ -142,7 +179,74 @@
 
     color: var(--muted-text);
 
-}
+} */
+
+ /* ===========================
+        Search & Filter
+=========================== */
+
+ .search-filter {
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     margin-bottom: 35px;
+ }
+
+ .search-box {
+     flex: 1;
+     margin-bottom: 0;
+ }
+
+ .search-box input {
+     width: 100%;
+     padding: 15px 20px;
+     background: var(--glass-bg);
+     border: 1px solid var(--soft-border);
+     border-radius: 10px;
+     color: var(--main-color);
+     outline: none;
+ }
+
+ .search-box input::placeholder {
+     color: var(--muted-text);
+ }
+
+
+ /* ===========================
+        Status Filter
+=========================== */
+
+ .status-filter {
+     display: flex;
+     align-items: center;
+     padding: 5px;
+     background: var(--glass-bg);
+     border: 1px solid var(--soft-border);
+     border-radius: 10px;
+ }
+
+ .filter-btn {
+     padding: 10px 16px;
+     background: transparent;
+     border: none;
+     border-radius: 7px;
+     color: var(--muted-text);
+     font-size: 14px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: .3s;
+ }
+
+ .filter-btn:hover {
+    color: var(--main-color);
+ }
+
+ .filter-btn.active {
+     background: rgba(255, 255, 255, .08);
+     /* color: var(--main-color); */
+     
+     box-shadow: 0 5px 15px var(--shadow-dark);
+ }
 
 
 
@@ -410,9 +514,9 @@
 .delete-user:hover {
 
 
-    background: var(--strong-color);
+    background: var(--main-color);
 
-    color: var(--main-color);
+    color: var(--strong-color);
 
     transform: translateY(-4px);
 

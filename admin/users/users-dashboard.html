@@ -62,6 +62,11 @@
 
             <h2>Users Management</h2>
 
+            <a href="add.html" class="add-btn">
+                <i class="fas fa-plus"></i>
+                Add User
+            </a>
+
         </div>
 
 
@@ -75,13 +80,18 @@
             </div>
 
             <div class="user-stat-card">
-                <h3>Admins</h3>
-                <span>5</span>
+                <h3>Customers</h3>
+                <span>197</span>
             </div>
 
             <div class="user-stat-card">
-                <h3>Customers</h3>
-                <span>245</span>
+                <h3>Admins</h3>
+                <span>3</span>
+            </div>
+
+            <div class="user-stat-card">
+                <h3>Blocked</h3>
+                <span>2</span>
             </div>
 
         </div>
@@ -89,10 +99,36 @@
 
 
         <!-- Search -->
-
+<!-- 
         <div class="user-search">
 
             <input type="text" placeholder="Search users...">
+
+        </div> -->
+
+        <div class="search-filter">
+
+            <div class="search-box">
+                <input type="text" placeholder="Search User...">
+            </div>
+
+            <div class="status-filter">
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="user">
+                    Customers
+                </button>
+
+                <button class="filter-btn" data-filter="admin">
+                    Admins
+                </button>
+
+                <button class="filter-btn" data-filter="blocked">
+                    Blocked
+                </button>
+            </div>
 
         </div>
 
@@ -233,17 +269,17 @@
 
                 <div class="user-actions">
 
-                    <a href="#" class="show-user">
+                    <a href="show-user.html" class="show-user">
                         Show
                     </a>
 
 
-                    <a href="#" class="edit-user">
+                    <a href="add.html" class="edit-user">
                         Edit
                     </a>
 
 
-                    <a href="#" class="delete-user">
+                    <a href="edit.html" class="delete-user">
                         Delete
                     </a>
 
