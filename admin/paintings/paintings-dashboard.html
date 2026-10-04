@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/overview.css"/>
     <!-- <link rel="stylesheet" href="css/auth.css"> -->
     <link rel="stylesheet" href="../../css/details.css">
-    <link rel="stylesheet" href="../../css/admin/paintings/admin-dashboard.css">
+    <link rel="stylesheet" href="../../css/admin/paintings/paintings-dashboard.css">
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="../../css/normalize.css"/>
     <!-- Font Awesome library -->
@@ -55,7 +55,7 @@
 
         <div class="dashboard-header">
 
-            <h2>Admin Dashboard</h2>
+            <h2>Paintings Dashboard</h2>
 
             <a href="addPainting.html" class="add-btn">
                 <i class="fas fa-plus"></i>
@@ -64,7 +64,7 @@
 
         </div>
 
-        <div class="stats">
+        <!-- <div class="stats">
 
             <div class="stat-card">
                 <h3>Total Paintings</h3>
@@ -81,11 +81,56 @@
                 <span>132</span>
             </div>
 
+        </div> -->
+
+        <div class="stats-paintings">
+
+            <div class="stat-card">
+                <h3>Total Paintings</h3>
+                <span>18</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>sold</h3>
+                <span>7</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Reserved</h3>
+                <span>132</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>active</h3>
+                <span>7</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Ended</h3>
+                <span>132</span>
+            </div>
+
         </div>
+
+        <!-- <div class="search-box">
+            <input type="text" placeholder="Search Painting...">
+        </div> -->
+
+    <div class="search-filter">
 
         <div class="search-box">
             <input type="text" placeholder="Search Painting...">
         </div>
+
+        <div class="status-filter">
+            <button class="filter-btn active" data-status="all">All</button>
+            <button class="filter-btn" data-status="sold">Sold</button>
+            <button class="filter-btn" data-status="reserved">Reserved</button>
+            <button class="filter-btn" data-status="active">Active</button>
+            <button class="filter-btn" data-status="ended">Ended</button>
+        </div>
+
+    </div>
 
         <div class="paintings">
 
@@ -97,12 +142,25 @@
 
                 <div class="content">
 
-                    <h3>Silent Shadows</h3>
+                    <!-- <h3>Silent Shadows</h3>
 
                     <span class="type">
                         Expressive
-                    </span>
+                    </span> -->
 
+                    <div class="painting-title">
+                        <h3>Silent Shadows</h3>
+
+                        <span class="type">
+                            Expressive
+                        </span>
+
+                        <span class="size">
+                            Size: 50 × 70 cm
+                        </span>
+                    </div>
+
+                    
                     <p>
                         A dark emotional painting expressing loneliness and hidden feelings.
                     </p>
