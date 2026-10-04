@@ -243,8 +243,7 @@
 
  .filter-btn.active {
      background: rgba(255, 255, 255, .08);
-     /* color: var(--main-color); */
-     
+     color: var(--main-color);
      box-shadow: 0 5px 15px var(--shadow-dark);
  }
 
@@ -416,7 +415,7 @@
 
 
 
-.active {
+.user-details span.active {
 
     color: var(--strong-color) !important;
 
