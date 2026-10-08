@@ -322,13 +322,36 @@
                                 Show
                             </a>
 
-                            <a href="#" class="edit-btn">
-                                Edit
-                            </a>
-
-                            <button class="delete-btn">
-                                Delete
+                            <button type="button" class="edit-btn edit-status-btn">
+                                Edit Status
                             </button>
+
+                        </div>
+
+
+                        <div class="status-edit" style="display: none;">
+
+                            <small>Shipping Status</small>
+
+                            <select>
+
+                                <option value="processing">
+                                    Processing
+                                </option>
+
+                                <option value="shipped">
+                                    Shipped
+                                </option>
+
+                                <option value="delivered" selected>
+                                    Delivered
+                                </option>
+
+                                <option value="cancelled">
+                                    Cancelled
+                                </option>
+
+                            </select>
 
                         </div>
 
@@ -359,12 +382,12 @@
                             <h3>
                                 Order:
                                 <span class="type">
-                                    Nada Hashem
+                                    Sara Ahmed
                                 </span>
                             </h3>
 
                             <span class="size">
-                                Delivered
+                                Processing
                             </span>
 
                             <h3>
@@ -459,12 +482,38 @@
                                 Show
                             </a>
 
-                            <a href="#" class="edit-btn">
-                                Edit
-                            </a>
+                            <button type="button" class="edit-btn edit-status-btn">
+                                Edit Status
+                            </button>
 
-                            <button class="delete-btn">
-                                Delete
+                        </div>
+
+                        <div class="status-edit" style="display: none;">
+
+                            <small>Shipping Status</small>
+
+                            <select>
+
+                                <option value="processing">
+                                    Processing
+                                </option>
+
+                                <option value="shipped">
+                                    Shipped
+                                </option>
+
+                                <option value="delivered">
+                                    Delivered
+                                </option>
+
+                                <option value="cancelled">
+                                    Cancelled
+                                </option>
+
+                            </select>
+
+                            <button type="button" class="confirm-status">
+                                Confirm
                             </button>
 
                         </div>
@@ -482,6 +531,80 @@
     </section>
 
     <!-- End Orders Dashboard -->
+
+<script>
+
+    const editStatusButtons =
+        document.querySelectorAll('.edit-status-btn');
+
+    editStatusButtons.forEach(button => {
+
+        button.addEventListener('click', function () {
+
+            const content = this.closest('.content');
+
+            const statusEdit =
+                content.querySelector('.status-edit');
+
+            statusEdit.style.display =
+                statusEdit.style.display === 'none'
+                    ? 'flex'
+                    : 'none';
+
+        });
+
+    });
+
+
+    const confirmStatusButtons =
+        document.querySelectorAll('.confirm-status');
+
+    confirmStatusButtons.forEach(button => {
+
+        button.addEventListener('click', function () {
+
+            const content = this.closest('.content');
+
+            const statusEdit =
+                content.querySelector('.status-edit');
+
+            const select =
+                statusEdit.querySelector('select');
+
+            const newStatus =
+                select.value;
+
+            const statusText =
+                newStatus.charAt(0).toUpperCase() +
+                newStatus.slice(1);
+
+
+            // Update shipping status
+            const shippingStatus =
+                content.querySelector('.details .status:last-child');
+
+            if (shippingStatus) {
+                shippingStatus.textContent = statusText;
+            }
+
+
+            // Update status in the order header
+            const orderStatus =
+                content.querySelector('.painting-title .size');
+
+            if (orderStatus) {
+                orderStatus.textContent = statusText;
+            }
+
+
+            // Hide status edit
+            statusEdit.style.display = 'none';
+
+        });
+
+    });
+
+</script>
 
 
 </body>
